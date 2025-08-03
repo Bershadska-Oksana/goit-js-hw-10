@@ -15,9 +15,11 @@ export default defineConfig({
     sourcemap: true,
     rollupOptions: {
       input: {
+        home: resolve(__dirname, 'src/index.html'),
         timer: resolve(__dirname, 'src/1-timer.html'),
         snackbar: resolve(__dirname, 'src/2-snackbar.html'),
       },
+
       output: {
         manualChunks(id) {
           if (id.includes('node_modules')) {
