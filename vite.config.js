@@ -16,7 +16,7 @@ export default defineConfig({
     rollupOptions: {
       input: {
         timer: resolve(__dirname, 'src/1-timer.html'),
-        form: resolve(__dirname, 'src/2-form.html'),
+        snackbar: resolve(__dirname, 'src/2-snackbar.html'),
       },
       output: {
         manualChunks(id) {
